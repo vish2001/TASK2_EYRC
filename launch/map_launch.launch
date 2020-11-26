@@ -1,0 +1,6 @@
+<launch>
+    <arg name="map_file" default="$(find ebot_nav)/maps/task2_map.yaml"/> 
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" required="true" output="screen"/>
+    <param name ="frame_id" value="/map" />
+</launch>
+

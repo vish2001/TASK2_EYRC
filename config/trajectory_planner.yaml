@@ -1,0 +1,26 @@
+TrajectoryPlannerROS:
+  #Set the acceleration limits of the robot
+  acc_lim_th: 5.2
+  acc_lim_x: 4 #2
+  acc_lim_y: 4 #2
+
+  #Set the velocity limits of the robot
+  max_vel_x: 3.2
+  min_vel_x: 0.005
+  max_vel_theta: 1.25
+  min_vel_theta: -1.25
+  min_in_place_rotational_vel: 0.4
+  #For this example, we'll use a holonomic robot
+  holonomic_robot: false
+
+  #We'll configure how long and with what granularity we'll forward simulate trajectories
+  sim_time: 1 #2
+
+
+  #Parameters for scoring trajectories
+  goal_distance_bias: 0.3
+  path_distance_bias: 0.5
+  occdist_scale: 0.01
+  heading_lookahead: 0.4
+
+  meter_scoring: true
