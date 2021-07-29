@@ -1,2 +1,2 @@
 # TASK2_EYRC
-TASK2 EYRC of 2020
+Autonomous navigation using ebot
